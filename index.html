@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda de Sara Camargo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>👋 Tienda de Sara Camargo</h1>
+    <h2>Accesorios de Entrenamiento</h2>
+
+    <select id="filtro-categoria">
+      <option value="todos">Todos</option>
+      <option value="fuerza">Fuerza</option>
+      <option value="hidratacion">Hidratación</option>
+      <option value="proteccion">Protección</option>
+      <option value="cardio">Cardio</option>
+    </select>
+
+    <div id="lista-productos"></div>
+    <button id="ver-carrito">🛒 Ver Carrito</button>
+  </div>
+
+  <!-- Modal Carrito -->
+  <div id="modal-carrito" class="modal">
+    <div class="modal-contenido">
+      <span id="cerrar-modal">&times;</span>
+      <h2>Tu carrito</h2>
+      <ul id="lista-carrito"></ul>
+      <div id="paypal-button-container"></div>
+    </div>
+  </div>
+
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+  <script src="script.js"></script>
+</body>
+</html>
