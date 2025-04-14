@@ -1,0 +1,111 @@
+/* Tu CSS base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.producto {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  max-width: 500px;
+}
+
+.producto:hover {
+  transform: scale(1.02);
+}
+
+.producto h3 {
+  color: #1abc9c;
+  margin-bottom: 10px;
+}
+
+.producto p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.precio {
+  font-weight: bold;
+  color: #e67e22;
+  font-size: 16px;
+}
+
+button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #16a085;
+}
+
+#ver-carrito {
+  background-color: #e67e22;
+  margin-top: 30px;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+#ver-carrito:hover {
+  background-color: #d35400;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-contenido {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  text-align: left;
+}
+
+#cerrar-modal {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+}
